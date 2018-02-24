@@ -11,7 +11,7 @@ import warnings
 if not sys.warnoptions:
     warnings.simplefilter("ignore")
 
-BRING_KEY = '4aee9188364d46f58cb7c09b7268688'
+BRING_KEY = 'enter your api'
 
 def speak(value):
     engine = pyttsx3.init()
@@ -77,7 +77,7 @@ class MyFrame(wx.Frame):
             else:
                 try:
                     #wolframalpha
-                    app_id = "JGEJEQ-WLLLLEPY9L"
+                    app_id = "Enter your API"
                     client = wolframalpha.Client(app_id)
                     res = client.query(inputx)
                     #res.replace("Wolfram|Alpha","Chipo")
